@@ -21,7 +21,7 @@ class Button extends Component{
         const {handleClick} = this;
 
         return (
-            <div>
+            <div className={styles.inlineBlock}>
                 <button className={styles.btn} onClick={handleClick}>
                     {buttonText}
                 </button>
