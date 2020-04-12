@@ -16,16 +16,18 @@ class Button extends Component{
     }
 
     render(){
-        const {buttonText} = this.props;
+        const {buttonText, numberText} = this.props;
         const {clickCount} = this.state;
         const {handleClick} = this;
 
         return (
             <div className={styles.inlineBlock}>
+                <h1>Button with class components!</h1>
                 <button className={styles.btn} onClick={handleClick}>
                     {buttonText}
                 </button>
                 <p>You pressed this button {clickCount} times </p>
+                <p>{numberText} + {clickCount} = {numberText + clickCount}</p>
             </div>
         );
     }

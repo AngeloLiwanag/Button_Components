@@ -1,0 +1,21 @@
+.btn{
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: sans-serif;
+    border: solid 2px #000000;
+    text-transform: uppercase;
+    outline-color: #575757;
+}
+
+.btn:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.inlineBlock{
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+}
+

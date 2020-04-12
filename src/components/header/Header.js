@@ -10,16 +10,16 @@ class Header extends Component{
                 <h3 className={logo}>{logoText}</h3>
                 <ul>
                     <li>
-                        <a href="#" className={link}>about</a>
+                        <p className={link}>about</p>
                     </li>
                     <li>
-                        <a href="#" className={link}>contact</a>
+                        <p className={link}>blog</p>
                     </li>
                     <li>
-                        <a href="#" className={link}>contact</a>
+                        <p className={link}>contact</p>
                     </li>
                     <li>
-                        <a href="#" className={link}>contact</a>
+                        <p className={link}>projects</p>
                     </li>
                 </ul>
             </div>

@@ -1,0 +1,17 @@
+.inlineBlock{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 30px;
+}
+
+.noSpace{
+    margin: 2px;
+}
+
+.spanColor{
+    color: #238ba8;
+}
+
+.success{
+    color: #7ac073;
+}
