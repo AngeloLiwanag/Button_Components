@@ -6,6 +6,8 @@ import Btn from './components/btn/Btn';
 import Wrapper from './components/wrapper/Wrapper';
 import Form from './components/form/Form';
 import BoxGenerator from './components/boxgenerator/BoxGenerator';
+import Alert from './components/alert/Alert';
+import Tabs from './components/tabs/Tabs';
 import './App.css';
 
 function App() {
@@ -28,6 +30,11 @@ function App() {
 
       <Lesson lesson={4} topic={"Map Iteration"}>
         <BoxGenerator/>
+      </Lesson>
+
+      <Lesson lesson={5} topic={"How To Send Arguments In Callbacks"}>
+        {/* <Alert songs={["Stargazing", "Magnolia", "Silly Watch"]}/> */}
+        <Tabs section={[1, 2, 3]}/>
       </Lesson>
     </div>
   );
