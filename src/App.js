@@ -5,6 +5,7 @@ import Button from './components/button/Button';
 import Btn from './components/btn/Btn';
 import Wrapper from './components/wrapper/Wrapper';
 import Form from './components/form/Form';
+import BoxGenerator from './components/boxgenerator/BoxGenerator';
 import './App.css';
 
 function App() {
@@ -23,6 +24,10 @@ function App() {
 
       <Lesson lesson={3} topic={"Forms"}>
         <Form/>
+      </Lesson>
+
+      <Lesson lesson={4} topic={"Map Iteration"}>
+        <BoxGenerator/>
       </Lesson>
     </div>
   );

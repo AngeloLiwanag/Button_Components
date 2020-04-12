@@ -1,0 +1,6 @@
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    margin: 0 auto;
+}
