@@ -17,7 +17,7 @@ const Tabs = ({section}) => {
                 selectedTab={selectedTab} setSelectedTab={setSelectedTab}
                 />)
             )}
-            {selectedTab.clicked && <Section selectedTab={selectedTab.tab}/>}
+            {selectedTab.clicked && <Section selectedTab={selectedTab} setSelectedTab={setSelectedTab} tab={selectedTab.tab}/>}
         </div>
     )
 }

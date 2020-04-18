@@ -13,12 +13,7 @@ const Button = ({item, selectedTab, setSelectedTab}) => {
     }
 
     return(
-        <button 
-            onClick={(e) => 
-            clickHandler(e, item)} 
-            className={styles.btn} 
-            name="tab"
-        >Tab {item}</button>
+        <button className={styles.btn} onClick={(e) => clickHandler(e, item)} name="tab">Tab {item}</button>
     )
 }
 
