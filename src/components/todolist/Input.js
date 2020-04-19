@@ -1,30 +1,23 @@
 import React from 'react';
 
-const Input = ({todo, setTodo, setList}) => {
+const Input = ({todo, setTodo}) => {
+    let task = {
+        list: '',
+        isComplete: false
+    }
+
     const handleChange = e => {
-        setTodo({
-            ...todo,
-            [e.target.name]: e.target.value
-        })
+        task.list = e.target.value;
     }
 
     const handleSubmit = e => {
         e.preventDefault();
-        setTodo({
-            ...todo,
-            [e.target.name]: e.target.value
-        })
-        let data = todo.list;
-        setList(e => [
-            ...e,
-            data
-        ])
-        console.log(todo.list)
+        setTodo([...todo, task]);
     }
 
     return(
         <form onSubmit={handleSubmit}>
-            <input type="text" name='list' onChange={handleChange}/>
+            <input onChange={handleChange} name='task' type="text"/>
             <button type="submit">ADD</button>
         </form>
     )
