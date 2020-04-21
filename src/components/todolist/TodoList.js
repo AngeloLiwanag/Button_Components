@@ -6,20 +6,13 @@ const TodoList = props => {
     const [todo, setTodo] = useState([])
     return(
         <div>
+            <h1>Daily To Do List</h1>
             <Input todo={todo} setTodo={setTodo}/>
 
             {todo.map((item, index) =>{
                 return <Data item={item} index={index} todo={todo} setTodo={setTodo}/>
             })}
 
-            {/* {list.map((items, i) => {
-                    return(
-                        <div>
-                            {todo.delete === false && <Data key={i} id={i} todo={todo} setTodo={setTodo} list={items}/>}
-                        </div>
-                    ) 
-                })
-            } */}
         </div>
     )
 }
