@@ -11,6 +11,7 @@ import Tabs from './components/tabs/Tabs';
 import TodoList from './components/todolist/TodoList';
 import TimeDisplay from './components/timedisplay/TimeDisplay';
 import NavBar from './components/navbar/NavBar';
+import Pokemon from './components/pokemon/Pokemon';
 import './App.css';
 
 function App() {
@@ -48,6 +49,10 @@ function App() {
 
       <Lesson lesson={7} topic={"Context"}>
         <NavBar/>
+      </Lesson>
+
+      <Lesson lesson={8} topic={"Application Program Interface"}>
+        <Pokemon/>
       </Lesson>
     </div>
   );
