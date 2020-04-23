@@ -12,6 +12,7 @@ import TodoList from './components/todolist/TodoList';
 import TimeDisplay from './components/timedisplay/TimeDisplay';
 import NavBar from './components/navbar/NavBar';
 import Pokemon from './components/pokemon/Pokemon';
+import Axios from './components/axios/Axios';
 import './App.css';
 
 function App() {
@@ -53,6 +54,7 @@ function App() {
 
       <Lesson lesson={8} topic={"Application Program Interface"}>
         <Pokemon/>
+        <Axios/>
       </Lesson>
     </div>
   );
