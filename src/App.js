@@ -13,6 +13,7 @@ import TimeDisplay from './components/timedisplay/TimeDisplay';
 import NavBar from './components/navbar/NavBar';
 import Pokemon from './components/pokemon/Pokemon';
 import Axios from './components/axios/Axios';
+import Routing from './components/routing/Routing';
 import './App.css';
 
 function App() {
@@ -55,6 +56,10 @@ function App() {
       <Lesson lesson={8} topic={"Application Program Interface"}>
         <Pokemon/>
         <Axios/>
+      </Lesson>
+
+      <Lesson lesson={9} topic={"Routing"}>
+        <Routing/>
       </Lesson>
     </div>
   );
